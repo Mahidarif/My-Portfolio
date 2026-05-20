@@ -1,0 +1,102 @@
+.education__header {
+  max-width: 760px;
+  margin-bottom: 40px;
+}
+
+.education__timeline {
+  position: relative;
+  display: grid;
+  gap: 24px;
+}
+
+.education__line {
+  position: absolute;
+  left: 12px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(201, 168, 76, 0.2);
+  border-radius: 999px;
+}
+
+.education__item {
+  position: relative;
+  padding-left: 40px;
+}
+
+.education__dot {
+  position: absolute;
+  left: 4px;
+  top: 22px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  border: 2px solid var(--gold);
+  box-shadow: 0 0 0 4px rgba(201, 168, 76, 0.08);
+}
+
+.education__card {
+  padding: 32px;
+}
+
+.education__card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+
+.education__degree {
+  font-size: 1.35rem;
+  margin-bottom: 8px;
+}
+
+.education__institution {
+  display: block;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.education__period {
+  color: var(--gold-light);
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.education__points {
+  display: grid;
+  gap: 12px;
+  list-style: none;
+}
+
+.education__point {
+  display: flex;
+  gap: 14px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.education__point-dot {
+  min-width: 10px;
+  min-height: 10px;
+  border-radius: 50%;
+  margin-top: 0.55rem;
+  background: var(--gold);
+}
+
+@media (max-width: 768px) {
+  .education__card {
+    padding: 24px;
+  }
+
+  .education__line {
+    left: 8px;
+  }
+
+  .education__item {
+    padding-left: 32px;
+  }
+}
