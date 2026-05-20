@@ -1,0 +1,136 @@
+.skills {
+  background: var(--bg-primary);
+  position: relative;
+}
+
+.skills__header {
+  margin-bottom: 60px;
+}
+
+.skills__categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+.skills__card {
+  padding: 36px 28px !important;
+}
+
+.skills__card-icon {
+  font-size: 1.4rem;
+  color: var(--gold);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.skills__card-title {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.skills__card-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skills__card-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 300;
+  transition: color 0.3s ease;
+}
+
+.skills__card:hover .skills__card-item {
+  color: var(--text-primary);
+}
+
+.skills__dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold-dark);
+  flex-shrink: 0;
+  transition: background 0.3s ease;
+}
+
+.skills__card:hover .skills__dot {
+  background: var(--gold-light);
+}
+
+/* Marquee */
+.skills__marquee-wrapper {
+  overflow: hidden;
+  border-top: 1px solid var(--border-glass);
+  border-bottom: 1px solid var(--border-glass);
+  padding: 20px 0;
+  position: relative;
+}
+
+.skills__marquee-wrapper::before,
+.skills__marquee-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.skills__marquee-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, var(--bg-primary), transparent);
+}
+
+.skills__marquee-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, var(--bg-primary), transparent);
+}
+
+.skills__marquee {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  width: max-content;
+}
+
+.skills__marquee-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 32px;
+  font-family: var(--font-alt-serif);
+  font-size: 1rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.skills__marquee-dot {
+  color: var(--gold-dark);
+  font-size: 0.6rem;
+}
+
+@media (max-width: 968px) {
+  .skills__categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .skills__categories {
+    grid-template-columns: 1fr;
+  }
+}

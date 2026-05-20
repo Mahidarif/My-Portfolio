@@ -1,0 +1,125 @@
+.experience {
+  background: var(--bg-primary);
+  position: relative;
+}
+
+.experience__header {
+  margin-bottom: 60px;
+}
+
+.experience__timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 40px;
+}
+
+.experience__line {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, var(--gold-dark), rgba(201,168,76,0.1));
+}
+
+.experience__item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.experience__item:last-child {
+  margin-bottom: 0;
+}
+
+.experience__dot {
+  position: absolute;
+  left: -32px;
+  top: 24px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  border: 2px solid var(--gold);
+  z-index: 2;
+}
+
+.experience__card {
+  padding: 32px !important;
+}
+
+.experience__card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.experience__role {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.experience__company {
+  font-size: 0.85rem;
+  color: var(--gold);
+  font-weight: 400;
+}
+
+.experience__period {
+  font-family: var(--font-alt-serif);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  padding: 6px 14px;
+  border: 1px solid var(--border-glass);
+  border-radius: 50px;
+  font-style: italic;
+}
+
+.experience__points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.experience__point {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.experience__point-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--gold-dark);
+  margin-top: 10px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .experience__timeline {
+    padding-left: 32px;
+  }
+  .experience__dot {
+    left: -24px;
+    width: 10px;
+    height: 10px;
+  }
+  .experience__card-header {
+    flex-direction: column;
+  }
+  .experience__period {
+    align-self: flex-start;
+  }
+}

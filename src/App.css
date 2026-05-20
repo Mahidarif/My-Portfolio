@@ -1,0 +1,23 @@
+.app {
+  position: relative;
+  background: var(--bg-primary);
+  min-height: 100vh;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader__gold {
+  font-size: 2rem;
+  color: var(--gold);
+  animation: spinGold 1.5s ease-in-out infinite;
+}
+
+@keyframes spinGold {
+  0% { transform: rotate(0deg) scale(1); opacity: 0.3; }
+  50% { transform: rotate(180deg) scale(1.2); opacity: 1; }
+  100% { transform: rotate(360deg) scale(1); opacity: 0.3; }
+}
