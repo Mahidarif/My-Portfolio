@@ -4,10 +4,10 @@ import { useEffect, useState } from 'react';
 import './About.css';
 
 const stats = [
-  { label: 'Projects Delivered', value: 12, suffix: '+' },
+  { label: 'Projects Delivered', value: 10, suffix: '+' },
   { label: 'Happy Clients', value: 10, suffix: '+' },
   { label: 'Tech Stack Proficiencies', value: 12, suffix: '+' },
-  { label: 'Years Coding', value: 4, suffix: '+' },
+  { label: 'Years Coding', value: 1, suffix: '+' },
 ];
 
 function Counter({ target, suffix }) {
